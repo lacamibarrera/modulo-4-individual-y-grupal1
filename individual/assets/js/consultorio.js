@@ -15,11 +15,10 @@ function Consultorio(nombre,paciente){
     };
 }
 /* Busca paciente y retorna Pacientes encontrados */
-Consultorio.prototype.BuscarPaciente = function(nombre) {
-    console.log(typeof this.paciente);
+    Consultorio.prototype.BuscarPaciente = function(nombre) {
     return this.paciente.find((paciente) => paciente.nombre === nombre);
 };
-Consultorio.prototype.PacientesEncontrados = function(){
+    Consultorio.prototype.PacientesEncontrados = function(){
 
 };
 
@@ -77,11 +76,9 @@ let paciente3 = new Paciente("Fernando Fernandez", 45, "7.777.777.1", "Displacia
     paciente2.fichapaciente();
     paciente3.fichapaciente();
 
-    let Consultorio1 = new Consultorio("Consultorio grupo4");
+    let Consultorio1 = new Consultorio();
     Consultorio1.setPaciente(paciente1);
 
-    //Retornar Pacientes
-    console.log(Consultorio1.PacientesEncontrados());
     console.log(Consultorio1.BuscarPaciente("Juan Perez"));
 
 

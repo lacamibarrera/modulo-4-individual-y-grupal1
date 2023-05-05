@@ -1,13 +1,12 @@
-
-function validarInput(input) {    
-    if (input.trim() === '' || !isNaN(input)) {
+function validarInput() {   
+    const entradaBusqueda = document.getElementById('entradaUsuario');
+    const valorBusqueda = entradaBusqueda.value;
+    
+    if (valorBusqueda.trim() === '' || !isNaN(valorBusqueda)) {
         return false;
     } else {
         return true;
     }
 }
 
-const entradaBusqueda = document.getElementById('entradaUsuario');
-const valorBusqueda = entradaBusqueda.value;
-
-validarInput(valorBusqueda);
+validarInput();

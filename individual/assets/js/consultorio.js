@@ -71,14 +71,17 @@ let paciente3 = new Paciente("Fernando Fernandez", 45, "7.777.777.1", "Displacia
 
 
     
-
+//me entrega la informacion de los pacientes 1 2 y 3 declarados anteriormente//
     paciente1.fichapaciente();
     paciente2.fichapaciente();
     paciente3.fichapaciente();
 
+
+    //seteo buscar paciente en el consultorio solo por Nombre//
     let Consultorio1 = new Consultorio();
     Consultorio1.setPaciente(paciente1);
 
+//Busco a "Juan Perez y me retorna su ficha en la consola"//
     console.log(Consultorio1.BuscarPaciente("Juan Perez"));
 
 

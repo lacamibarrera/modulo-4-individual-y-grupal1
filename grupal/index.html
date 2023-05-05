@@ -9,19 +9,34 @@
     <title>Grupal</title>
 </head>
 <body class="row mx-1">
-    <h1 class="mx-2 mt-2">Título</h1>
-    <nav class="mx-2">
-        Inicio | Post | Sobre Nosostros
-    </nav>
-    <main class="row mt-4">
+    <header class="nav border-bottom text-align-center">
+        <h1 class="mx-2">Título</h1>
+        <nav class="pt-2  ">
+            Inicio | Post | Sobre Nosostros
+        </nav>
+    </header>
+    <main class="row my-4 py-2  rounded ">
         <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Busqueda</span>
-            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            <button id="botonBuscar" onclick="validarInput()" type="button" class="btn btn-primary">Buscar</button>
+            <input id="entradaUsuario" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
         </div>
+        <div class="form-check mx-3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+                Por nombre
+            </label>
+        </div>
+        <div class="form-check mx-3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+            <label class="form-check-label" for="flexRadioDefault2">
+                Por favoritos
+            </label>
+        </div>
+
     </main>
     <footer>
         <div class="container">
-            <footer class="py-3 my-4">
+            <footer class="py-1 my-2">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
@@ -40,13 +55,13 @@
 
 <!--
 REQUERIMIENTOS
-1. Crear el sitio web en base a HTML5.
-2. Agrega un título al sitio
-3. Bajo el título principal, agrega tres términos que serán la base para un menú que se implementará más
+✔. Crear el sitio web en base a HTML5.
+✔. Agrega un título al sitio
+✔. Bajo el título principal, agrega tres términos que serán la base para un menú que se implementará más
 adelante. Separa estos términos con algún carácter especial como “|”.
-4. Agregar un pie de página.
-5. Debe usar bootstrap que incluyan JavaScript (carousel, tooltips, entre otros)
-6. Realizar un buscador con opción de buscar por nombre o por favoritos.
+✔. Agregar un pie de página.
+✔. Debe usar bootstrap que incluyan JavaScript (carousel, tooltips, entre otros)
+✔. Realizar un buscador con opción de buscar por nombre o por favoritos.
 7. Validar el formulario del buscador, que no admita tipear en el input con números, o si el nombre no se
 encuentra, por ahora solo debe de validar el formulario.
 -->

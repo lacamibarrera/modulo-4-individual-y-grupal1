@@ -14,37 +14,34 @@ Object.defineProperty(Consultorio.prototype,'prueba',{
     }
 })
 
-// Consultorio.prototype = {
-//     get nombrePaciente() {
-//         return this._nombrePaciente;
-//     },
-//     set cambiarNombre(nuevoNombre) {
-//         this._nombre = nuevoNombre;
-//     }
-// }
-
 
 let nuevoPaciente1 = new Consultorio("Fernando Fernandez");
 let nuevoPaciente2 = new Consultorio("Juan Perez");
-let nuevoPaciente3 = new Consultorio("Juanito Perez");
+let nuevoPaciente3 = new Consultorio("Margarita Ruiz");
  console.log(nuevoPaciente1.prueba);
  console.log(nuevoPaciente1.prueba = "juan valdebenito");
- console.log(nuevoPaciente2.test);
+ console.log(nuevoPaciente2.prueba);
+
+/* usar metodo find)*/
+
+
 
 
 /* Funcion que busca por nombre paciente"*/
-
+/*
+/
 function Buscarpaciente(nombre){
 let pacientesEncontrados = [];
 
-    for (let i = 0; i < Paciente.listaDePacientes.length; i++) {
-        if (Paciente._listadepacientes[i].nombre.toLowerCase() === nombre.toLowerCase()) {
-        pacientesEncontrados.push(Paciente._listadepacientes[i]);
+    for (let i = 0; i > Paciente.pacientesEncontrados.length; i++) {
+        if (Paciente.fichapaciente[i].nombre.toLowerCase() === nombre.toLowerCase()) {
+        pacientesEncontrados.push(Paciente.fichapaciente[i]);
     }
     }
 
-    return pacientesEncontrados;
+    return [];
 };
+console.log(Buscarpaciente); */
 
 Paciente.prototype.mostrarPacientes= function(){
     return Paciente._listadepacientes;
@@ -99,7 +96,7 @@ function Paciente(nombre, rut, edad, diagnostico) {
 
 let paciente1 = new Paciente("Juan Perez", 30, "123456-8", "Gripe");
 let paciente2 = new Paciente("Margarita Ruiz", 58, "7.896.523-8", "Hipertensión");
-//let paciente3 = new Paciente("Fernando Fernandez", 45, "7.777.777.1", "Displacia de Cadera");
+let paciente3 = new Paciente("Fernando Fernandez", 45, "7.777.777.1", "Displacia de Cadera");
    
 
 
@@ -107,9 +104,5 @@ let paciente2 = new Paciente("Margarita Ruiz", 58, "7.896.523-8", "Hipertensión
 
     paciente1.fichapaciente();
     paciente2.fichapaciente();
+    paciente3.fichapaciente();
 
-    Paciente._listadepacientes.push(paciente1, paciente2);
-
-console.log(paciente1.Buscarpaciente("Fernando Fernandez"));
-
-console.log(Paciente._listadepacientes);
